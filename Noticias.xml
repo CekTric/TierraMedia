@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Últimas noticias destacadas</title>
+        <link></link>
+        <description>Últimas noticias destacadas</description>
+        <item>
+            <title>Rumor sobre la segunda temporada de 'Los Anillos de Poder'</title>
+            <link>https://www.20minutos.es/cinemania/series/segunda-temporada-los-anillos-poder-podria-presentar-hijo-sauron-varias-versiones-villano-senor-los-anillos-5215556/</link>
+            <description>Noticia destacada sobre la serie de ESDLA de Amazon Prime.</description>
+        </item>
+        <item>
+            <title>Estrella de las miticas peliculas insatisfecha con su papel</title>
+            <link>https://www.sensacine.com/noticias/cine/noticia-1000076352/</link>
+            <description>'Era un perchero' decia esta famosa celebridad sobre su papel en las peliculas.</description>
+        </item>
+        <item>
+            <title>Jake Gyllenhaal pudo ser Frodo en ESDLA</title>
+            <link>https://as.com/meristation/cine/jake-gyllenhaal-pudo-ser-frodo-en-el-senor-de-los-anillos-pero-su-casting-fue-desastroso-n/</link>
+            <description>Esta celebridad pudo llegar a ser el protagonista de las peliculas por muy poco.</description>
+        </item>
+        <item>
+            <title>Se anuncia nueva película de ESDLA</title>
+            <link>https://www.espinof.com/fecha-de-estreno/senor-anillos-guerra-rohirrim-fecha-estreno-trailer-reparto-todo-que-sabemos-pelicula-precuela-trilogia-peter-jackson-basada-tolkien</link>
+            <description>Llega este mismo año en forma de animación una nueva entrega de la famosa saga.</description>
+        </item>
+        <item>
+            <title>En que orden ver las peliculas y series de ESDLA</title>
+            <link>https://as.com/meristation/cine/en-que-orden-y-donde-ver-todas-las-peliculas-y-series-de-el-senor-de-los-anillos-y-el-hobbit-n/</link>
+            <description>Muchas personas desean adentrarse en este mundo pero ¿en qué orden?</description>
+        </item>
+    </channel>
+</rss>

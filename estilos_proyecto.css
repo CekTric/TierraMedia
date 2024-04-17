@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(236, 210, 171);
+    margin-top: 12%;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 600px;
+    width: 100%;
+    background-color: #914b36;
+    overflow: hidden;
+    border: 2px solid white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #bebebe;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-right: 10px;
+
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.nav_logo {
+    display: inline-flex;
+    margin: 15px;
+    justify-content: start;
+}
+
+.nav_logo img {
+    align-content: start;
+    width: 200px;
+}
+
+nav h2 {
+    color: white;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 35px;
+    font-family: 'EB Garamond';
+}
+
+.usuario_nuevo {
+    display: inline-flex;
+    justify-content: start;
+}
+
+.usuario_nuevo img {
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu_icono {
+    display: none;
+    cursor: pointer;
+}
+
+.menu_icono img {
+    max-width: 30%;
+    display: block;
+}
+
+.desplegable {
+    position: fixed;
+    background-color: black;
+    width: 40%;
+    height: 60%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+    display: none;
+    align-content: center;
+    gap: 1rem;
+    z-index: 1000;
+    opacity: 0; /* Inicialmente establece la opacidad en 0 */
+    pointer-events: none; /* Evita que el menú desplegable sea interactivo mientras está oculto */
+    transition: opacity 0.3s ease-out;
+}
+
+.menu_icono:hover~.desplegable,
+.desplegable:hover {
+    display: block;
+    opacity: 1;
+    pointer-events: auto; /* Habilitar la interacción con el menú desplegable */
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.desplegable li {
+    justify-content: center;
+}
+
+.desplegable li a {
+    display: inline-flex;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+.desplegable li a:hover {
+    transition: all .3s;
+
+}
+
+/*SECCIÓN TEXTO INICIO*/
+.section .about {
+    position: relative;
+    padding: 3em 0;
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)), url('img/mapa.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+}
+
+.section .about::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: gold;
+    width: 100%;
+    height: 3px;
+}
+
+.section .about p {
+    color: white;
+}
+
+.about .text {
+    margin: 100px;
+    color: white;
+    text-align: justify;
+}
+
+h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 3px 3px 1px black;
+    font-family: 'EB Garamond';
+    font-size: 4em;
+    color: gold;
+    text-align: center;
+    margin: 10px;
+}
+
+hr {
+    /*Separador*/
+    background-color: gold;
+    width: 75%;
+    border: 1px solid rgb(128, 108, 0);
+    margin-bottom: 30px;
+}
+
+/*SECCION 2X2*/
+.libros {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.card_libro {
+    width: 300px;
+    height: 450px;
+}
+
+.card_libro img {
+    width: 300px;
+    height: 450px;
+}
+
+.text-contenedor {
+    display: flex;
+    /* Utilizamos flexbox */
+    justify-content: center;
+    /* Centramos horizontalmente */
+    align-items: center;
+    /* Centramos verticalmente */
+    height: 100%;
+    /* Aseguramos que el contenedor ocupe toda la altura */
+}
+
+.text-contenedor p {
+    padding: 30px;
+    padding-top: 120px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, #bb832e 100%);
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+/*SECCION IMAGENES 3X3*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px;
+    justify-items: center;
+}
+
+.card {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 4px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+.card figcaption {
+    display: none;
+    font-size: 1.5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    bottom: 0px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover figcaption {
+    display: flex;
+}
+
+.card:hover .card {
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(22px);
+}
+
+/*CONTACTO*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid brown;
+    background-color: rgb(244, 255, 203);
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 50px;
+
+}
+
+.contacto label {
+    margin-top: 10px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid brown;
+    width: 100%;
+}
+
+/*FORMULARIO*/
+.formulario {
+    border: 3px solid #ffffff;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, #bb832e 100%);
+
+}
+
+.fieldsets-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+fieldset {
+    background-color: lightgray;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+fieldset legend {
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px rgb(66, 66, 66);
+    background-color: gray;
+}
+
+#enviar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid brown;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: #663300;
+}
+
+.formulario label {
+    display: inline-block;
+    width: auto;
+    text-align: right;
+    margin-right: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 70%;
+    height: 70%;
+    resize: vertical;
+}
+
+/*REDES Y FOOTER*/
+#redes {
+    background-color: beige;
+
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.logos img {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+
+
+footer {
+    position: relative;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    bottom: 0;
+}
+
+.copyright {
+    background-color: black;
+    color: lightgray;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+/*RESPONSIVES*/
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        height: 70%;
+        width: 70%;
+    }
+
+    .nav_logo img {
+        width: 125%;
+    }
+
+    .menu_icono {
+        /* Mostrar el icono de menú en pantallas pequeñas */
+        display: block;
+        width: 100%;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .libros {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .menu_icono {
+        display: none;
+    }
+
+    .navegacion {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    body {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}

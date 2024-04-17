@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estilos_proyecto.css">
+    <link rel="shortcut icon" href="img/anillo.png">
+    <title>Tierra Media - Usuario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <img src="img/logo_esdla.png" alt="Nav Logo">
+            </div>
+
+            <h2>Tierra Media: El Mundo de Tolkien</h2>
+
+            <div class="lista_nav">
+                <a href="HOME.html">INICIO</a>
+                <a href="/HOME.html#LIBROS">LIBROS</a>
+                <a href="/HOME.html#GALERIA">GALERIA</a>
+                <a href="/HOME.html#CONTACTO">CONTACTO</a>
+            </div>
+
+            <div class="usuario_nuevo">
+                <a href="Formulario.html">
+                    <img src="img/usuario.png" alt="Usuario">
+                </a>
+            </div>
+
+            <div class="navegacion">
+                <div class="menu_icono">
+                    <img src="img/menu_list.png" alt="Icono Menú">
+                </div>
+                <ul class="desplegable" id="desplegable">
+                    <li><a href="HOME.html">INICIO</a></li>
+                    <li><a href="/HOME.html#LIBROS">LIBROS</a></li>
+                    <li><a href="/HOME.html#GALERIA">GALERIA</a></li>
+                    <li><a href="/HOME.html#CONTACTO">CONTACTO</a></li>
+                    <li><a href="Formulario.html">USUARIO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="formulario">
+        <h1>REGISTRAR USUARIO</h1>
+        <div class="fieldsets-container">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre y Apellidos:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos"><br>
+                <label for="passw">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña segura"><br>
+                <label for="correo">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="Email"><br>
+                <label for="año">Fecha de nacimiento:</label>
+                    <input type="date" id="edad" name="edad"><br>
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo">
+                      <option value="seleccionar" selected disabled>seleccionar</option>
+                      <option value="hombre" >Hombre</option>
+                      <option value="mujer">Mujer</option>
+                    </select><br>
+                <label for="comerciales">Aceptar políticas de privacidad:</label>
+                    <input type="checkbox" id="comerciales" name="comerciales">
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios (Opcional)</legend>
+                <label for="comentario">¡Dejanos tu opinión para mejorar!</label>
+                    <textarea id="message" name="message" placeholder="Escribe aquí"></textarea><br>
+                    <input type="submit" id="enviar" value="Enviar">
+            </fieldset>
+            
+        </div>
+        
+    </div>
+
+    <div class="redes">
+        <div class="logos">
+            <a href="https://www.instagram.com/warnerbrosspain/?hl=es" target="_blank">
+                <img src="img/ig.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/warnerbrosspain?lang=es" target="_blank">
+                <img src="img/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/El_Se%C3%B1or_de_los_Anillos" target="_blank">
+                <img src="img/wiki.png" alt="Wikipedia">
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2024 Proyecto Web Responsive | Pablo Rodríguez</p>
+    </footer>
+</body>
+</html>
